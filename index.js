@@ -8,7 +8,10 @@ const app = express();
 const PORT = 3002;
 
 connectDB()
-app.use(cors());
+app.use(cors({
+  origin : "https://bhumikabf.netlify.app",
+  credentials : true
+}));
 app.use(express.json());
 app.get("/", (req, res, next)=>{
   res.send("hello..")
