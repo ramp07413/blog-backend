@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "a6d53525-f225-416b-b090-885d894faac6",
+		"name": "blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42953020",
+		"_collection_link": "https://grey-escape-493597.postman.co/workspace/Team-Workspace~0c08a0b0-f1b0-4282-88ae-662715fcc7df/collection/42953020-a6d53525-f225-416b-b090-885d894faac6?action=share&source=collection_link&creator=42953020"
+	},
+	"item": [
+		{
+			"name": "card",
+			"item": [
+				{
+					"name": "delete card",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/card/68d7e6f98b5d4bfdd07fce1b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"card",
+								"68d7e6f98b5d4bfdd07fce1b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update card",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cardTitle\" : \"new title\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/card/68d7e6f98b5d4bfdd07fce1b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"card",
+								"68d7e6f98b5d4bfdd07fce1b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create card",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "card get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/card",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"card"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "letter",
+			"item": [
+				{
+					"name": "create letter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/letter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"letter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get letter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/letter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"letter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update letter",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\" : \"dear sir\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/letter/68d8a5b450c49e276f51e60c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"letter",
+								"68d8a5b450c49e276f51e60c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete letter",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
