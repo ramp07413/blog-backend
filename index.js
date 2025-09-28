@@ -7,15 +7,22 @@ import { connectDB } from './database/db.js';
 const app = express();
 const PORT = 3002;
 
-connectDB()
+connectDB();
+
+// CORS middleware for all routes
 app.use(cors({
-  origin : "https://bhumikabf.netlify.app",
-  credentials : true
+  origin: "https://bhumikabf.netlify.app",
+  credentials: true
 }));
+
 app.use(express.json());
-app.get("/", (req, res, next)=>{
+
+// Test route
+app.get("/", (req, res) => {
   res.send("hello..")
-})
+});
+
+// All other routes
 app.use('/card', cardRouter);
 app.use('/letter', letterRouter);
 
